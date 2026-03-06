@@ -1,15 +1,28 @@
 name: kite
-description: A developer-friendly Flutter CLI to bootstrap projects, install packages, and generate app structure.
+description: A lightweight Flutter CLI tool to create projects, scaffold architecture, generate boilerplate code, and manage dependencies for faster Flutter development.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+
+homepage: https://orkitt.dev
+repository: https://github.com/orkitt/kite
+issue_tracker: https://github.com/orkitt/kite/issues
+
+screenshots:
+  - description: 'Orkitt Kite Client'
+    path: screenshots/icon.png
+topics:
+  - cli
+  - scaffold
+  - generator
+  - boilerplate
+  - developer-tools
 
 environment:
-  sdk: ^3.11.0
+  sdk: ^3.1.0
 
-# Add regular dependencies here.
 dependencies:
   path: ^1.9.0
   args: ^2.4.2
+
 dev_dependencies:
   lints: ^6.0.0
   test: ^1.25.6
