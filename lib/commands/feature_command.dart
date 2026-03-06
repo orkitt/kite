@@ -1,5 +1,4 @@
 import 'package:args/command_runner.dart';
-
 import '../core/generator.dart';
 import '../core/json_loader.dart';
 

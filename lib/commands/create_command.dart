@@ -40,7 +40,7 @@ class CreateCommand extends Command {
     final org = argResults!["org"];
 
     // 1️⃣ Run flutter create
-    print("🚀 Running flutter create $projectName ...");
+    print("🚀 Loading boosters for $projectName ...");
 
     final result = await Process.run("flutter", [
       "create",
@@ -54,7 +54,7 @@ class CreateCommand extends Command {
       return;
     }
 
-    print("✅ Flutter project $projectName created.");
+    logStep("Flutter project $projectName created.");
 
     // 2️⃣ Load template JSON
     final templateDir = useRiverpod
@@ -71,7 +71,7 @@ class CreateCommand extends Command {
 
     Generator.generate(template, {"app": projectName, "org": org});
 
-    print("🎉 Project $projectName is ready with Kite scaffolding!");
+    logStep("$projectName is ready with Kite scaffolding! 🪁");
 
     /// 2️⃣ Move into project directory
     Directory.current = Directory(projectPath);
@@ -81,10 +81,18 @@ class CreateCommand extends Command {
 
     /// 4️⃣ Add dev dependencies
     await _addDevDependencies();
+
+      /// Open the project in VS Code
+    logStep("Opening project in VS Code...");
+    await Process.run(
+      "code",
+      [projectPath],
+      runInShell: true,
+    );
   }
 
   Future<void> _addDependencies(bool riverpod) async {
-    print("📦 Adding dependencies...");
+    logStep("Adding dependencies...");
 
     final deps = ["flutter_addons", "shared_preferences", "go_router"];
 
@@ -93,7 +101,7 @@ class CreateCommand extends Command {
     }
 
     // print("➜ flutter pub add ${deps.join(" ")}");
-    logStep(  "Installing dependencies [$deps.length]...");
+    logStep(  "Installing dependencies [${deps.length}]...");
 
     final result = await Process.run("flutter", [
       "pub",
@@ -107,16 +115,16 @@ class CreateCommand extends Command {
       return;
     }
 
-    print("✅ Dependencies added");
+    logStep("Dependencies added");
   }
 
   Future<void> _addDevDependencies() async {
-    print("🧪 Adding dev dependencies...");
+    logStep("Adding dev dependencies...");
 
     final devDeps = ["build_runner", "json_serializable", "freezed"];
 
     //print("➜ flutter pub add --dev ${devDeps.join(" ")}");
-    logStep(  "Installing dev dependencies [$devDeps.length]...");
+    logStep("Installing dev dependencies [${devDeps.length}]...");
 
     final result = await Process.run("flutter", [
       "pub",
@@ -131,7 +139,10 @@ class CreateCommand extends Command {
       return;
     }
 
-    print("✅ Dev dependencies added");
+    logStep("Dev dependencies added");
+
+
+
   }
 
   void logStep(String message) {
