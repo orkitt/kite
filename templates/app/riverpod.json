@@ -1,0 +1,34 @@
+{
+  "folders": [
+    "core/constants",
+    "core/theme",
+    "core/colors",
+    "data/models",
+    "data/repositories",
+    "features",
+    "l10n",
+    "providers"
+  ],
+  "files": [
+    {
+      "path": "app.dart",
+      "content": "// TODO:Riverpod  App root widget for {{app}} with Riverpod"
+    },
+    {
+      "path": "bootstrap.dart",
+      "content": "// TODO: bootstrap logic for {{app}}"
+    },
+    {
+      "path": "core/constants/app_constants.dart",
+      "content": "// TODO: app constants for {{app}}"
+    },
+    {
+      "path": "core/theme/theme.dart",
+      "content": "// TODO: theme setup for {{app}}"
+    },
+    {
+      "path": "core/colors/app_color.dart",
+      "content": "// TODO: color definitions for {{app}}"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "folders": [
+    "features/{{feature}}",
+    "features/{{feature}}/widgets"
+  ],
+  "files": [
+    {
+      "path": "features/{{feature}}/{{feature}}_page.dart",
+      "content": "// TODO: {{Feature}} page (simple)"
+    },
+    {
+      "path": "features/{{feature}}/{{feature}}_provider.dart",
+      "content": "// TODO: {{Feature}} provider (simple)"
+    }
+  ]
+}

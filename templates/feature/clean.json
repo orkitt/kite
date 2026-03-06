@@ -1,0 +1,22 @@
+{
+  "folders": [
+    "features/{{feature}}/data",
+    "features/{{feature}}/domain",
+    "features/{{feature}}/presentation",
+    "features/{{feature}}/widgets"
+  ],
+  "files": [
+    {
+      "path": "features/{{feature}}/{{feature}}_page.dart",
+      "content": "// TODO: {{Feature}} page (clean architecture)"
+    },
+    {
+      "path": "features/{{feature}}/{{feature}}_provider.dart",
+      "content": "// TODO: {{Feature}} provider (clean architecture)"
+    },
+    {
+      "path": "features/{{feature}}/{{feature}}_repository.dart",
+      "content": "// TODO: {{Feature}} repository (clean architecture)"
+    }
+  ]
+}

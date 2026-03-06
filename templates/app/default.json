@@ -1,0 +1,30 @@
+{
+  "folders": [
+    "core/constants",
+    "core/theme",
+    "core/colors",
+    "data/models",
+    "data/repositories",
+    "features",
+    "l10n",
+    "providers",
+    "routes",
+    "services",
+    "shared/widgets",
+    "shared/utils"
+  ],
+  "files": [
+    {
+      "path": "main.dart",
+      "content": "// TODO:Main {{app}}"
+    },
+    {
+      "path": "app.dart",
+      "content": "// TODO: App root widget for {{app}}"
+    },
+    {
+      "path": "bootstrap.dart",
+      "content": "// TODO: bootstrap logic for {{app}}"
+    }
+  ]
+}
