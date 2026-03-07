@@ -8,6 +8,8 @@ void main(List<String> args) {
     ..addCommand(ModelCommand())
     ..addCommand(RouteCommand())
     ..addCommand(WidgetCommand())
+    ..addCommand(ServiceCommand())
+    ..addCommand(DoctorCommand())
 
     // Handle runner command case
     ..addCommand(RunCommand())

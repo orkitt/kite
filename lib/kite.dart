@@ -8,3 +8,6 @@ export 'package:kite/commands/widget_command.dart';
 export 'package:kite/commands/run_commands.dart';
 export 'package:kite/commands/build_commands.dart';
 export 'package:kite/commands/generate_commands.dart';
+
+export 'package:kite/commands/service_command.dart';
+export 'package:kite/commands/doctor_command.dart';
