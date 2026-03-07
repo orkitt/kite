@@ -40,7 +40,7 @@ class ServiceCommand extends Command {
 
     final service = argResults!.rest.first;
 
-    final bool http = argResults!["http"] as bool;
+   // final bool http = argResults!["http"] as bool;
     final bool dio = argResults!["dio"] as bool;
     final bool retrofit = argResults!["retrofit"] as bool;
 
