@@ -1,6 +1,6 @@
 name: kite
 description: A lightweight Flutter CLI tool to create projects, scaffold architecture, generate boilerplate code, and manage dependencies for faster Flutter development.
-version: 1.0.0
+version: 0.0.1-dev.1
 
 homepage: https://orkitt.dev
 repository: https://github.com/orkitt/kite
