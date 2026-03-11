@@ -36,7 +36,9 @@ class CreateCommand extends Command {
     }
 
     final projectName = args.first;
-    final useRiverpod = argResults!["riverpod"];
+   final useRiverpod = argResults!.wasParsed('riverpod') 
+    ? argResults!['riverpod'] as bool 
+    : false;
     final org = argResults!["org"];
 
     // 1️⃣ Run flutter create
@@ -57,9 +59,9 @@ class CreateCommand extends Command {
     logStep("Flutter project $projectName created.");
 
     // 2️⃣ Load template JSON
-    final templateDir = useRiverpod
-        ? "templates/app/riverpod.json"
-        : "templates/app/default.json";
+   final templateDir = useRiverpod
+    ? "templates/app/riverpod.json"
+    : "templates/app/default.json";
 
     final templatePath = PathHelper.template(templateDir);
     final template = JsonLoader.load(templatePath);

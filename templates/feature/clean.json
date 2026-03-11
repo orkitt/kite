@@ -1,22 +1,48 @@
 {
   "folders": [
-    "features/{{feature}}/data",
     "features/{{feature}}/domain",
+    "features/{{feature}}/domain/entities",
+    "features/{{feature}}/domain/usecases",
+    "features/{{feature}}/data",
+    "features/{{feature}}/data/models",
+    "features/{{feature}}/data/repositories",
+    "features/{{feature}}/data/datasources",
     "features/{{feature}}/presentation",
-    "features/{{feature}}/widgets"
+    "features/{{feature}}/presentation/pages",
+    "features/{{feature}}/presentation/widgets"
   ],
   "files": [
     {
-      "path": "features/{{feature}}/{{feature}}_page.dart",
-      "content": "// TODO: {{Feature}} page (clean architecture)"
+      "path": "features/{{feature}}/presentation/pages/{{feature}}_page.dart",
+      "content": "// TODO: {{Feature}} page (UI)"
+    },
+    {
+      "path": "features/{{feature}}/presentation/widgets/{{feature}}_widget.dart",
+      "content": "// TODO: {{Feature}} reusable widget"
     },
     {
       "path": "features/{{feature}}/{{feature}}_provider.dart",
-      "content": "// TODO: {{Feature}} provider (clean architecture)"
+      "content": "// TODO: {{Feature}} provider / state management"
     },
     {
-      "path": "features/{{feature}}/{{feature}}_repository.dart",
-      "content": "// TODO: {{Feature}} repository (clean architecture)"
+      "path": "features/{{feature}}/domain/entities/{{feature}}_entity.dart",
+      "content": "// TODO: {{Feature}} entity"
+    },
+    {
+      "path": "features/{{feature}}/domain/usecases/{{feature}}_usecase.dart",
+      "content": "// TODO: {{Feature}} use case / business logic"
+    },
+    {
+      "path": "features/{{feature}}/data/models/{{feature}}_model.dart",
+      "content": "// TODO: {{Feature}} data model"
+    },
+    {
+      "path": "features/{{feature}}/data/repositories/{{feature}}_repository.dart",
+      "content": "// TODO: {{Feature}} repository implementation"
+    },
+    {
+      "path": "features/{{feature}}/data/datasources/{{feature}}_datasource.dart",
+      "content": "// TODO: {{Feature}} data source (API / DB / local)"
     }
   ]
 }
