@@ -7,7 +7,7 @@ version: 1.0.1
 homepage: https://github.com/orkitt/kite_ui
 repository: https://github.com/orkitt/kite_ui
 issue_tracker: https://github.com/orkitt/kite_ui/issues
-documentation: https://github.com/orkitt/kite_ui#readme
+documentation: https://orkitt.github.io/kite_ui/
 
 topics:
   - flutter

@@ -57,14 +57,6 @@ extension BuildContextExtensions on BuildContext {
 
   bool get isLtr => textDirection == TextDirection.ltr;
 
-  // Navigation
-  NavigatorState get navigator => Navigator.of(this);
-
-  bool get canPop => navigator.canPop();
-
-  void pop<T extends Object?>([T? result]) {
-    navigator.pop(result);
-  }
 
   ModalRoute<dynamic>? get modalRoute => ModalRoute.of(this);
 

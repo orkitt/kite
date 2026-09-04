@@ -64,7 +64,7 @@ Kite accelerates development without hiding Flutter behind another framework.
 
 ## Documentation
 
-* **[kite.orkitt.dev](https://kite.orkitt.dev)**
+* **[kite.orkitt.dev](https://orkitt.github.io/kite_ui/)**
 * **[pub.dev/packages/kite](https://pub.dev/packages/kite)**
 * **[pub.dev/packages/kite_cli](https://pub.dev/packages/kite_cli)**
 

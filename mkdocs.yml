@@ -1,0 +1,80 @@
+site_name: Kite
+site_description: Flutter devpack with a modern design system, reusable UI components, responsive primitives, utilities, and application foundations.
+site_url: https://orkitt.github.io/kite_ui/
+repo_url: https://github.com/orkitt/kite_ui
+repo_name: orkitt/kite_ui
+edit_uri: edit/master/docs/
+
+theme:
+  name: material
+  language: en
+  logo: assets/images/kite-icon.png
+  favicon: assets/images/kite-icon.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Get started:
+      - Installation: getting-started.md
+      - KiteApp: kite-app.md
+      - Theming: theming.md
+      - Responsive UI: responsive.md
+  - Components:
+      - Overview: components/index.md
+      - Inputs & selection: components/inputs-selection.md
+      - Buttons & actions: components/buttons-actions.md
+      - Feedback & overlays: components/feedback-overlays.md
+      - Navigation & layout: components/navigation-layout.md
+      - Display & content: components/display-content.md
+  - Design system:
+      - Colors: design/colors.md
+      - Typography: design/typography.md
+      - Dimensions & shapes: design/dimensions-shapes.md
+  - Utilities:
+      - Extensions: extensions.md
+      - API surface: api.md
+  - Package:
+      - Changelog: changelog.md
+      - Contributing: contributing.md
